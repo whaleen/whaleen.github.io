@@ -16,7 +16,7 @@
 title: Joshua Vaage
 email: joshuavaage@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  Carpenter of Fine Code Furniture.
+  Front-End Developer
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
@@ -27,3 +27,9 @@ gems:
 exclude:
   - Gemfile
   - Gemfile.lock
+
+
+collections:
+  projects:
+    output: true
+    permalink: /project/:path/

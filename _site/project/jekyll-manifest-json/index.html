@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Joshua Vaage</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://localhost:4000/assets/css/tachyons.min.css" media="screen" title="no title" charset="utf-8">
+</head>
+
+  <body class="">
+
+    <article class="pa3 pa4-ns">
+      <h1 class="f-subheadline f1-m">Jekyll-manifest.json</h1>
+      <p class="measure lh-copy f3 fw1 fw2-l f2-l">
+        Output manifest.json to the _site directory of a Jekyll installation.
+      </p>
+    <a class="f6 link dim br2 ph3 pv2 mb2 dib white bg-black" href="https://github.com/whaleen/Jekyll-manifest.json">GitHub Repo</a>
+    </article>
+
+
+
+
+
+
+    <div class="pa3 pa4-ns">
+    <h1 id="jekyll-manifestjson">Jekyll-manifest.json</h1>
+<p>Output manifest.json to the _site directory of a Jekyll installation.</p>
+
+<p>Add the following to the config.yml file:</p>
+
+<div class="language-yml highlighter-rouge"><pre class="highlight"><code><span class="s">manifest_name</span><span class="pi">:</span> <span class="s">Web App Full Name</span>
+<span class="s">manifest_short_name</span><span class="pi">:</span> <span class="s">Short Name</span> <span class="c1"># Appears in "Add to home screen" dialogues and may have other importance also</span>
+<span class="s">manifest_lang</span><span class="pi">:</span> <span class="s">en</span>
+<span class="s">manifest_background_color</span><span class="pi">:</span> <span class="s">white</span>
+<span class="s">manifest_short_name</span><span class="pi">:</span>
+<span class="s">manifest_display</span><span class="pi">:</span> <span class="s">standalone</span>
+</code></pre>
+</div>
+
+<p>Create manifest.yml file in the root directory containing liquid tags to pull values from the config.yml file:</p>
+
+<div class="language-json highlighter-rouge"><pre class="highlight"><code><span class="err">---</span><span class="w">
+</span><span class="err">permalink:</span><span class="w"> </span><span class="err">manifest.json</span><span class="w">
+</span><span class="err">---</span><span class="w">
+
+</span><span class="p">{</span><span class="w">
+  </span><span class="nt">"lang"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
+  </span><span class="nt">"background_color"</span><span class="p">:</span><span class="w"> </span><span class="s2">"#"</span><span class="p">,</span><span class="w">
+  </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
+  </span><span class="nt">"short_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
+  </span><span class="nt">"display"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
+  </span><span class="nt">"icons"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="nt">"src"</span><span class="p">:</span><span class="w"> </span><span class="s2">"img/144X144-icon.png"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"sizes"</span><span class="p">:</span><span class="w"> </span><span class="s2">"144x144"</span><span class="p">,</span><span class="w">
+      </span><span class="nt">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"image/png"</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">]</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+</div>
+
+<p>Resources:</p>
+<ul>
+  <li><a href="http://brucelawson.github.io/manifest/">Manifest Generator</a></li>
+  <li><a href="https://dev.opera.com/articles/installable-web-apps/">Installable Web Apps</a></li>
+</ul>
+
+    </div>
+
+  </body>
+</html>
